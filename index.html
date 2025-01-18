@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		 <meta charset="utf-8">
+			<title>Our first Bootstrap project</title>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+			
+			<style>
+			.row h3{
+			border-left:5px solid gray;
+			padding-left:10px;
+			}
+			.card .card-text{
+			color:gray;
+			}
+			
+			.card:hover{
+			background-color:#e6ecea;
+			color:#000;
+			}
+			
+			
+			.card{
+			transition:all o.3s;
+			}
+			</style>
+		</head>	
+     <body>
+	 
+	<!--Navbar start-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+		<div class="container">
+		    <a class="navbar-brand" href="#"><strong>Go Kiiw</strong></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item active fw-bolder me-3">
+						<a class="nav-link" aria-current="page" href="#">Home</a>
+					</li>
+				
+					<li class="nav-item dropdown active fw-bolder me-3">
+						<a class="nav-link dropdown-toggle"  href="#" data-bs-toggle="dropdown" aria-expanded="false">
+						Products</a>
+						
+						<!-- Dropdown-Menu Start-->
+						<ul class="dropdown-menu">
+							<div class="container" style="width: 800px;">
+								<div class="row">
+								
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6"><a href="#" class="text-decoration-none">
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body bg-dark bg-opacity-25 ">
+											<div class="icon">
+												<i class="bi bi-people h4"></i>
+											</div>
+												<div>
+													<h2>Gokiiw Queue Management system</h2>
+													<p class="card-text">Track,serve and manage your customer queues across multiple locations.</p>
+												</div>
+											</div>
+										</div>
+										
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body bg-dark bg-opacity-25">
+											  <div class="icon">
+												<i class="bi bi-robot h4"></i>
+											  </div>
+												<div>
+													<h2>Service Intelligence</h2>
+													<p class="card-text">Track server data and measure staff performance.</p>
+												</div>
+											</div>
+										</div>
+								</a></div> 
+									<!-- col-md-4 End -->
+									
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6">
+										<div class="card card-hover curson-pointer border-0 mb-3">
+											<div class="card-body d-inline">
+											  <div class="icon">
+												<i class="bi bi-trophy h4"></i>
+											  </div>
+												<div>
+													<h2>Our Clients</h2>
+													<p class="card-text">See how other businesses in your industry are using Gokiiw.</p>
+												</div>
+											</div>
+										</div>
+										
+										<div class="card card-hover border-0 mb-3">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-command h4"></i>
+											  </div>
+												<div>
+													<h2>Our Clients</h2>
+													<p class="card-text">See how other businesses in your industry are using Gokiiw.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- col-md-4 End -->
+									
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6">
+										<div class="card card-hover border-0 mb-3">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-card-list h4"></i>
+											  </div>
+												<div>
+													<h2>Our Clients</h2>
+													<p class="card-text" >See how other businesses in your industry are using Gokiiw.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- col-md-4 End -->
+					
+								</div>
+							</div>
+						</ul>
+						<!-- Dropdown-Menu End-->
+						
+					</li>
+					
+					<li class="nav-item dropdown active fw-bolder me-3">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Learn</a>
+						
+						<!-- Dropdown-Menu Start-->
+						<ul class="dropdown-menu" role="menu">
+							<div class="container" style="width: 750px;">
+								<div class="row">
+								
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6"><a href="#" class="text-decoration-none">
+										<div class="card card-hover border-0 mb-0">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-question-circle h4"></i>
+											  </div>
+												<div>
+													<h2>Help Center</h2>
+													<p class="card-text">Manage, serve and track your customer accross multiple location</p>
+												</div>
+											</div>
+										</div>
+										
+										<div class="card card-hover border-0 mb-3" style="curson: pointer;">
+											<div class="card-body">
+											   <div class="icon">
+												  <i class="bi bi-robot h4"></i>
+											   </div>
+												<div>
+													<h2>FAQ</h2>
+													<p class="card-text">Need help? Don't wait around, see fequently ask question.</p>
+												</div>
+											</div>
+										</div></a>
+									</div> 
+									<!--col-md-4 End-->
+									
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6"><a href="#" class="text-decoration-none">
+										<div class="card card-hover border-0 mb-0" style="cursor: pointer;">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-postcard h4"></i>
+											  </div>
+												<div>
+													<h2>Blog</h2>
+													<p class="card-text">Our exciting weekly blog posts are where you read all about how our inovative software hepls you to: manage queues with ease save time and money make the most of our features use our software in different contexts Sing Up here to be the first to read our information blogs , service updates, and new product releases</p>
+												</div>
+											</div>
+										</div></a>
+									</div> 
+									<!--col-md-4 End-->
+									
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6"><a href="#" class="text-decoration-none">
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-robot h4"></i>
+											  </div>
+												<div>
+													<h2>Service Intelligence Podcast</h2>
+													<p class="card-text">Track server data and measure staff performance.</p>
+												</div>
+											</div>
+										</div></a>
+									</div>
+									<!--col-md-4 End-->
+								</div>
+							</div>
+						</ul>
+						<!-- Dropdown-Menu End-->
+					</li>
+					
+					<li class="nav-item active fw-bolder me-3">
+						<a class="nav-link" aria-current="page" href="#">Pricing</a>
+					</li>
+				
+					<li class="nav-item dropdown active fw-bolder me-3">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Company</a>
+						
+						<!-- Dropdown-Menu Start-->
+						<ul class="dropdown-menu">
+							<div class="container" style="width: 750px;">
+								<div class="row">
+
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6">
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-exclamation-circle h4"></i>
+											  </div>
+												<div>
+													<h2>About Us</h2>
+													<p class="card-text">Manage, serve and track your customer accross multiple lication</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--col-md-4 End-->
+
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6">
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-briefcase h4"></i>
+											  </div>
+												<div>
+													<h2>careers</h2>
+													<p class="card-text">Interested in joining the quest for a better customer service experience? Learn more about working at gokiiw.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--col-md-4 End-->
+									
+									<!-- col-md-4 Start -->
+									<div class="col-sm-6">
+										<div class="card card-hover curson-pointer border-0 mb-0">
+											<div class="card-body">
+											  <div class="icon">
+												<i class="bi bi-chat h4"></i>
+											  </div>
+												<div>
+													<h2>Contact Us</h2>
+													<p class="card-text">Learn about features and pricing option.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--col-md-4 End-->
+								</div>
+							</div>
+						</ul>
+						<!-- Dropdown-Menu End-->
+					</li>
+				</ul>	
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="btn btn-outline-dark  fw-bolder rounded-10 me-3" href="https//www.facebook.com">Try for free</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="btn btn-outline-dark rounded-10 fw-bolder me-3" href="www.facebook.com">Login</a>
+						</li>
+					</ul>
+		    </div>
+		</div>
+</nav>
+
+				<!--Nav Tag End-->
+				
+			<!--carousel-->
+	<div class="container my-3 pt-3">
+	    <div class="row justify-content-center align-items-center" style="min-height:80vh">
+			<div class="col-lg-6">
+				<h1>Next customer,please!</h1>
+				<p>Welcome to GoKiiw, the queue management system that helps your customers queue quickly and easily. No more waiting in line. With GoKiiw, you can create and manage a queue virtually for any event, shop, or service. Our queue management system simplifies the process of forming queues, saving your customers time and hassle. Learn more about your customers and their needs through our queue management and service analytics.
+                </p>
+			
+				  <a href="www.gokiww.com/signup" class="btn btn-outline-primary me-3 p-3  ">Try for free</a>
+				  <a href="www.login.com/login" class="btn btn-outline-primary p-3 me-3 ">Book a demo</a>
+			</div>
+			
+			  
+		<div class="col-lg-6">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousal">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="2000">
+							  <img src= "E:\62thclass\images\643bf29abb169.png"class=" w-100" alt="slide1">
+							  <div class="carousel-caption "> 
+							  </div>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+							  <img src="E:\62thclass\images\643bf37247649.jpg" class=" w-100" alt="slide2">
+							  <div class="carousel-caption">  
+							  </div>
+							</div>
+						  
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						  </button>
+				        </div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--carousel end-->
+	 <div class="container bg-dark">
+		<div class="row justify-content-center align-items-center p-5">
+			<div class="col-lg-12 text-center">
+				<img src= "E:\62thclass\images\dashboard.png"class="w-100" alt="download" />
+			</div>
+		</div>
+	 </div>
+	 
+	 
+<div class="container my-5 ">
+	<div class="row justify-content-center align-items-center" style="min-height:80vh">
+		<div class="col-10 text-center">
+			<h1>Gokiiw helps businesses save their customers 1,000+ hours of waiting in line,everyday</h1>
+			<p class="my-3">Long queues cost businesses across the world trillions of dollars in lost sales. Customers who experience poor queuing are less likely to stay and recommend your business.</p>
+		
+		</div>
+		<div class="col-lg-8">
+	        <div class="row my-5 py-5">
+			    <div class="col-lg-4 ">
+				
+					<p>Decrease wait times up to</p>
+					<h3>50%</h3>
+				</div>
+				<div class="col-lg-4">
+					<p>Reduce no-shows up to</p>
+					<h3>75%</h3>
+				</div>
+			
+			
+			
+				<div class="col-lg-4">
+					<p>Increase CSAT up to</p>
+					<h3>97%</h3>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+	
+	<!--card-->
+	
+	<div class="container bg-body-tertiary">
+	    <div class="row px-5 justify-content-center align-items-center" style="min-height:70vh">
+			<div class="col px-5">
+				<h1>Get Started with Gokiiw</h1>
+				<p>It only takes a few minutes to get started with Gokiiw. Learn more about your customers, start free, today.</p>
+				 <div class="my-3">
+				  <a href="www.login.com/login" class="btn btn-outline-primary p-3 me-3 ">Book a demo</a>
+				  <a href="www.gokiww.com/signup" class="btn btn-outline-primary me-3 p-3  ">Try for free</a>
+				 </div>
+			</div>
+			<div class="col-lg-4 text-secondary">
+				<p class="my-4 h6"><i class="bi bi-credit-card me-3"></i>No installation fees</p>
+				<p class="my-4 h6"><i class="bi bi-heart me-3"></i>80+ million visitors served</p>
+				<p class="my-4 h6"><i class="bi bi-bookmark-check me-3"></i>GDPR-,SOC 2 type II & HIPAA-ready</p>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container mb-5">
+		<div class="row px-5 justify-content-center align-items-center">
+			<div class="col-12 my-5 text-center">
+				<h1>Great customer service,powered by data</h1>
+			</div>
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-bar-chart mb-3"></i></h1>
+				<h5 class="mb-3">See your business from a birds eye view</h5>
+				<p>Compare the performance of different locations and departments. Monitor the number of visitors waiting, average wait times, and other metrics.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-people mb-3" ></i></h1>
+				<h5 class="mb-3">Empower your team with real-time metrics</h5>
+				<p>Give your staff the tools they need to supercharge your customer service. Recognize your team’s achievements and identify opportunities for growth.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-trophy mb-3"></i><h1>
+				<h5 class="mb-3">Gain insights into how your business works</h5>
+				<p>Easily measure and share performance results. Use service reports to keep track of KPIs and the effectiveness of service strategy.</p>
+			</div>
+		  </div>
+		</div>
+	</div>	
+</div>
+
+<!--card1 end-->
+  <!--card2 start-->
+	<div class="container mb-5">
+		<div class="row px-5 mt-5 justify-content-center align-items-center">
+			<div class="col-12 my-5 text-center">
+				<h1>Virtual waiting, real experiences</h1>
+			</div>
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-check-circle mb-3"></i></h1>
+				<h5 class="mb-3">Wait from anywhere</h5>
+				<p>Let customers safely wait in their car, at home, or outside. Notify them when you are ready to serve them.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-geo-alt mb-3" ></i></h1>
+				<h5 class="mb-3">Keep an open line of communication</h5>
+				<p>Give customers regular updates and wait times. Make them feel like VIPs by talking to them directly and asking for their feedback.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="col-lg-4 mb-3">
+	      <div class="card shadow px-3" style="height:50vh">
+			<div class="card-body">
+				<h1><i class="bi bi-wechat mb-3"></i><h1>
+				<h5 class="mb-3">Gain insights into how your business works</h5>
+				<p>Easily measure and share performance results. Use service reports to keep track of KPIs and the effectiveness of service strategy.</p>
+			</div>
+		  </div>
+		</div>
+	</div>	
+</div>
+<!--card2 end-->
+<!--footer-->
+	<div class=" bg-dark text-light mt-5 pt-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-2">
+				<h4>Go Kiiw</h4>
+			</div>
+			
+			<div class="col-lg-2">
+				<h4>Products</h4>
+				<br>
+			  <ul class="list-unstyled">
+				<li class="mb-3">Queue Solution</li>
+				<li class="mb-3">Service Analytics</li>
+				<li class="mb-3">Visit Planner</li>
+				<li class="mb-3">Pricing</li>
+				<li class="mb-3">Sign Up</li>
+			  </ul>
+			</div>
+			
+			<div class="col-lg-2">
+				<h4>Solutions</h4>
+				<br><br>
+			  <ul class="list-unstyled">
+				<li class="mb-3">Finance</li>
+				<li class="mb-3">Healthcare</li>
+				<li class="mb-3">Click & Collect</li>
+				<li class="mb-3">Education</li>
+				<li class="mb-3">Government</li>
+				<li class="mb-3">Ridesharing</li>
+				<li class="mb-3">Dispensaries</li>
+				
+			  </ul>
+			</div>
+			
+			<div class="col-lg-2">
+				<h4>Resources</h4>
+				<br><br>
+			  <ul class="list-unstyled">
+				<li class="mb-3">Support</li>
+				<li class="mb-3">Api Documentation</li>
+				<li class="mb-3">Customers</li>
+				<li class="mb-3">Case Studies</li>
+				<li class="mb-3">Blog</li>
+			  </ul>
+			</div>
+			
+			<div class="col-lg-2">
+				<h4>Company</h4>
+				<br><br>
+			  <ul class="list-unstyled">
+				<li class="mb-3">About Us</li>
+				<li class="mb-3">Careers</li>
+				<li class="mb-3">Contact</li>
+				<li class="mb-3">Terms of services</li>
+				<li class="mb-3">Status</li>
+			  </ul>
+			</div>
+			
+			<div class="col-12 my-4">
+				<div class="row">
+					<div class="col">
+						<p class="m-0">Gokiiw @ 2025.All Rights Reserved</p>
+					</div>
+					
+					<div class="col text-end">
+						<p class="m-0">Owned By<a href="www.softafriwue.com" class="text-decoration-none">Softafrique LLC</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+				
+	<!--footer end-->		
+
+
+	
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+	</body>
+    </html>
+		
+										
+																					
